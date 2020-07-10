@@ -1,0 +1,99 @@
+.infobox {
+    margin-bottom: 1.5em;
+    max-width: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.infobox a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+img.my-photo {
+    display: block;
+    width: 100%;
+}
+.profiles {
+    display: flex;
+    align-items: center;
+}
+.profiles a {
+    display: flex;
+    padding: 0.2em;
+}
+.infobox .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infobox .email .icon {
+    max-width: 2.5em;
+    margin-right: 0.2em;
+}
+.icon {
+    height: 2em;
+    width: 100%;
+}
+
+body {
+    background: #FFF;
+    color: #333333;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 150%;
+
+    margin: 0;
+    padding: 0 2.5em;
+}
+a {
+    color: #3d7e9a;
+}
+a:not(:hover) {
+    text-decoration: none;
+}
+::selection {
+    background: #FDF4B6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: initial;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+li img {
+    vertical-align: middle;
+}
+.date, .topics {
+    font-size: 75%;
+}
+.date {
+    white-space: nowrap;
+}
+
+@media (max-width: 820px) {
+    body {
+        padding: 0 1em;
+    }
+    ul {
+        padding-left: 1em;
+    }
+    ol {
+        padding-left: 1.2em;
+    }
+    .infobox {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 821px) {
+    p {
+        text-align: justify;
+    }
+    .infobox {
+        float: right;
+        margin-left: 2em;
+    }
+}
